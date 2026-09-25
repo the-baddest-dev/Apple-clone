@@ -1,0 +1,614 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding-top: 130px;
+}
+
+nav{
+  position: relative;
+}
+
+.box1and2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.box1{
+  display: flex;
+  border: 2px solid #f0f0f2;
+  background-color: #f0f0f2;
+  padding: 15px 0;
+  justify-content: center;
+  gap: 150px;
+  align-items: center;
+}
+
+.box1-child:nth-child(1){
+  /* border: 2px solid green; */
+  font-size: 12px;
+  color: #303030;
+}
+
+.box1-child:nth-child(2){
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.box1-innerchild:nth-child(1){
+  /* border: 2px solid red; */
+  position: relative;
+}
+
+select{
+  border: 2px solid #ffff;
+  border-radius: 10px;
+  width: 330px;
+  padding: 7px 13px; 
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 30px;
+  padding-right: 12px;
+  color: #323232;
+  font-size: 17px;
+  
+}
+
+.select-check{
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+select:focus{
+  border: 2px solid #0071e3;
+}
+
+option{
+  font-size: 17px;
+  /* border: 2px solid red; */
+}
+
+.box1-innerchild:nth-child(2) a{
+  text-decoration: none;
+  border: 2px solid #272729;
+  background-color: #272729;
+  color:  #ffffff;
+  padding: 7px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.box2{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  background-color: #f5f5f8;
+  height: 50px;
+}
+
+.box2-child a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+}
+
+.box2-child:nth-child(1) img,
+.box2-child:nth-child(13) img,
+.box2-child:nth-child(14) img{
+  padding-top: 10px;
+}
+
+.dropdown{
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  border: 2px solid #fafafc;
+  background-color: #fafafc;
+  padding: 40px 0px 40px 440px ;
+  gap: 70px;
+  z-index: 10;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.dropdown-child:nth-child(1) h2,
+.dropdown-child:nth-child(2) h2,
+.dropdown-child:nth-child(3) h2{
+  /* border: 2px solid brown; */
+  font-size: 12px;
+  color: #6e6e73;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.dropdown-child:nth-child(1) a{
+  /* border: 2px solid yellow; */
+  display: block;
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 600
+}
+
+.dropdown-child:nth-child(2) a,
+.dropdown-child:nth-child(3) a{
+  /* border: 2px solid pink; */
+  display: block;
+  padding-top: 10px;
+  font-size: 12px;
+  font-weight: 600
+}
+
+.box2-child:nth-child(2):hover .dropdown{
+  visibility: visible;
+  opacity: 1;
+}
+
+.dropdown2{
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  border: 2px solid #fafafc;
+  background-color: #fafafc;
+  top: 100%;
+  display: flex;
+  left: 0;
+  right: 0;
+  padding: 40px 0px 40px 440px ;
+  gap: 70px;
+  z-index: 10;
+  transition: opacity 0.3 ease, visibility 0s linear 0.3s;
+}
+
+.dropdown2-child:nth-child(1) h2,
+.dropdown2-child:nth-child(2) h2,
+.dropdown2-child:nth-child(3) h2{
+  /* border: 2px solid blue; */
+  font-size: 12px;
+  color: #6e6e73;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.dropdown2-child:nth-child(1) a{
+  /* color: yellow; */
+  display: block;
+}
+
+.dropdown2-child:nth-child(1) a:nth-child(2),
+.dropdown2-child:nth-child(1) a:nth-child(3),
+.dropdown2-child:nth-child(1) a:nth-child(4),
+.dropdown2-child:nth-child(1) a:nth-child(5),
+.dropdown2-child:nth-child(1) a:nth-child(6),
+.dropdown2-child:nth-child(1) a:nth-child(7),
+.dropdown2-child:nth-child(1) a:nth-child(8),
+.dropdown2-child:nth-child(1) a:nth-child(9){
+  /* border: 2px solid purple; */
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.dropdown2-child:nth-child(1) a:nth-child(10),
+.dropdown2-child:nth-child(1) a:nth-child(11){
+  /* border: 2px solid red; */
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.dropdown2-child:nth-child(2) a,
+.dropdown2-child:nth-child(3) a{
+  /* color: yellow; */
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.box2-child:nth-child(3):hover .dropdown2{
+  visibility: visible;
+  opacity: 1;
+}
+
+.box3{
+  min-height: 12px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.box3 p{
+  color: #1d1d1f;
+  font-size: 14px;
+  position: relative;
+}
+
+.box3 p > a{
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.box3 p > a:hover{
+  text-decoration: underline;
+}
+
+.box3 > p > a > img{
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 4px;
+}
+
+.first-section{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.iphone18pro{
+  background-image: url(./images/18pro.jpg);
+  min-height: 700px;
+  background-position: center;
+  text-decoration: none;
+  text-align: center;
+}
+
+.iphone18pro > header > h2{
+  /* color: yellow; */
+  font-size: 50px;
+  padding-top: 50px;
+}
+
+.iphone18pro > p{
+  /* border: 2px solid orangered; */
+  font-size: 28px;
+  
+}
+
+.two-anchor{
+  display: flex;
+  margin-left: 850px;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.two-anchor-child:nth-child(1){
+  /* color: blue; */
+  border: 2px solid #0076DF;
+  background-color: #0076DF;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 17px;
+}
+
+.two-anchor-child:nth-child(2){
+  border: 2px solid #0076DF;
+  background-color: #000000;
+  color: #0076DF;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+
+.two-anchor-child:nth-child(2):hover{
+  background-color: #0076DF;
+  color: #ffffff;
+}
+
+.second-section{
+  background-image: url(./images/iphoneduo.jpg);
+  min-height: 700px;
+  display: block;
+  background-position: center;
+  background-size: cover;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.iphoneduo{
+  text-align: center;
+}
+
+.second-section header > h2{
+  color: #1d1d1f;
+  font-size: 50px;
+  padding-top: 50px;
+  /* font-weight: 700; */
+}
+
+.second-section p{
+  color: #1d1d1f;
+  font-size: 28px;
+  padding-bottom: 5px;
+}
+
+.second-section span{
+  display: block;
+  font-size: 20px;
+  color: #6e6e73;
+  margin-bottom: -3px;
+}
+
+.duo-two-anchor{
+  display: flex;
+  margin-left: 850px;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.duo-two-anchorchild:nth-child(1) p{
+  border: 2px solid #0076DF;
+  background-color: #0076DF;
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 17px;
+}
+
+.duo-two-anchorchild:nth-child(2) p{
+  border: 2px solid #0076DF;
+  background-color: #f5f5f7;
+  color: #0076DF;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 17px;
+}
+
+.duo-two-anchorchild:nth-child(2) :hover{
+  background-color: #0076DF;
+  color: #ffffff;
+}
+
+.third-section{
+  background-image: url(./images/watch2.jpg);
+  min-height: 700px;
+  display: block;
+  background-position: center;
+  color: #ffffff;
+  text-decoration: none;
+  background-size: cover;
+  margin-bottom: 5px;
+  
+}
+
+.series{
+  width: 410px;
+  margin-top: 60px;
+}
+
+.watch{
+  text-align: center;
+}
+
+.third-section p{
+  /* color: pink; */
+  font-size: 30px;
+  margin-top: 400px;
+}
+
+sup{
+  /* border: 2px solid red; */
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.watch-anchor{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+
+.watch-anchor-child:nth-child(1){
+  border: 2px solid #0076DF;
+  color: #f5f5f7;
+  background-color: #0076DF;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 17px;
+}
+
+.watch-anchor-child:nth-child(2){
+  border: 2px solid #0076DF;
+  background-color: #000000;
+  color: #0076DF;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 17px;
+}
+
+.watch-anchor-child:nth-child(2):hover{
+  color: #f5f5f7;
+  background-color: #0076DF;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  margin: 10px 10px;
+}
+
+.watch-ultra4{
+  background-image: url(./images/ultra4.jpg);
+  min-height: 600px;
+  display: block;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+}
+
+.ultra4{
+  text-align: center;
+  padding-top: 50px;
+}
+
+.ultra4 p{
+  font-size: 22px;
+  color: #f5f5f7;
+  margin-top: -10px;
+}
+
+.ultra4-anchor{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.ultra4-child:nth-child(1){
+  border: 2px solid #0076DF;
+  color: #f5f5f7;
+  background-color: #0076DF;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 5px 15px 8px 15px;
+}
+
+.ultra4-child:nth-child(2){
+  border: 2px solid #0076DF;
+  background-color: #000000;
+  color: #0076DF;
+  /* padding: 10px 20px; */
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 5px 15px;
+}
+
+.ultra4-child:nth-child(2):hover{
+  color: #f5f5f7;
+  background-color: #0076DF;
+}
+
+.mac-mini{
+  display: block;
+  background-image: url(./images/macmini.jpg);
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+}
+
+.mini{
+  text-align: center;
+  padding-top: 50px;
+}
+
+.mini p:nth-child(1){
+  /* border: 2px solid purple; */
+  font-size: 38px;
+  color: #1d1d1f;
+  font-weight: 500;
+}
+
+.mini p:nth-child(2){
+  /* border: 2px solid orange; */
+  color: #1d1d1f;
+  font-size: 20px;
+}
+
+.mini-anchor{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.mini-child:nth-child(1){
+  border: 2px solid #0076DF;
+  color: #f5f5f7;
+  background-color: #0076DF;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 5px 15px 8px 15px;
+}
+
+.mini-child:nth-child(2){
+  border: 2px solid #0076DF;
+  background-color: #f5f5f7;
+  color: #0076DF;
+  /* padding: 10px 20px; */
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 5px 15px;
+}
+
+.mini-child:nth-child(2):hover{
+  color: #f5f5f7;
+  background-color: #0076DF;
+}
+
+.macbook-air{
+  display: block;
+  background-image: url(./images/macbookair.jpg);
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+}
+
+/* I used same styling for mac mini and macbook air */
+.ipad-air{
+  display: block;
+  background-image: url(./images/ipadair.jpg);
+  min-height: 600px;
+  background-position: center;
+  background-size: cover;
+  text-decoration: none;
+}
+
+.ipad{
+  text-align: center;
+  padding-top: 50px;
+}
+
+.ipad p{
+  font-size: 22px;
+  color: #1d1d1f;
+  margin-top: -10px;
+}
+
+.ipad-anchor{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.ipad-child:nth-child(1){
+  border: 2px solid #0076DF;
+  color: #f5f5f7;
+  background-color: #0076DF;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 5px 15px 8px 15px;
+}
+
+.ipad-child:nth-child(2){
+  border: 1px solid #0076DF;
+  /* background-color: #f5f5f7; */
+  color: #0076DF;
+  /* padding: 10px 20px; */
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 8px 17px;
+}
+
+.ipad-child:nth-child(2):hover{
+  color: #f5f5f7;
+  background-color: #0076DF;
+}
