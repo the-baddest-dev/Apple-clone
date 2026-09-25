@@ -296,7 +296,7 @@ option{
 }
 
 .two-anchor-child:nth-child(2){
-  border: 2px solid #0076DF;
+  border: 1px solid #0076DF;
   background-color: #000000;
   color: #0076DF;
   padding: 10px 20px;
@@ -360,7 +360,7 @@ option{
 }
 
 .duo-two-anchorchild:nth-child(2) p{
-  border: 2px solid #0076DF;
+  border: 1px solid #0076DF;
   background-color: #f5f5f7;
   color: #0076DF;
   padding: 10px 20px;
@@ -403,7 +403,8 @@ option{
 sup{
   /* border: 2px solid red; */
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 500;
+  color: #1d1d1f;
 }
 
 .watch-anchor{
@@ -424,7 +425,7 @@ sup{
 }
 
 .watch-anchor-child:nth-child(2){
-  border: 2px solid #0076DF;
+  border: 1px solid #0076DF;
   background-color: #000000;
   color: #0076DF;
   padding: 10px 20px;
@@ -439,8 +440,10 @@ sup{
 
 .grid-container{
   display: grid;
-  grid-template-columns: repeat(2,50%);
-  margin: 10px 10px;
+  /* grid-template-columns: repeat(2,50%); */
+  grid-template-columns: 50% 50%;
+  margin: 12px 10px;
+  gap: 10px;
 }
 
 .watch-ultra4{
@@ -476,17 +479,17 @@ sup{
   background-color: #0076DF;
   border-radius: 30px;
   font-size: 14px;
-  padding: 5px 15px 8px 15px;
+  padding: 6px 15px 8px 15px;
 }
 
 .ultra4-child:nth-child(2){
-  border: 2px solid #0076DF;
+  border: 1px solid #0076DF;
   background-color: #000000;
   color: #0076DF;
   /* padding: 10px 20px; */
   border-radius: 30px;
   font-size: 14px;
-  padding: 5px 15px;
+  padding: 9px 17px;
 }
 
 .ultra4-child:nth-child(2):hover{
@@ -534,17 +537,17 @@ sup{
   background-color: #0076DF;
   border-radius: 30px;
   font-size: 14px;
-  padding: 5px 15px 8px 15px;
+  padding: 6px 15px 8px 15px;
 }
 
 .mini-child:nth-child(2){
-  border: 2px solid #0076DF;
+  border: 1px solid #0076DF;
   background-color: #f5f5f7;
   color: #0076DF;
   /* padding: 10px 20px; */
   border-radius: 30px;
   font-size: 14px;
-  padding: 5px 15px;
+  padding: 9px 17px;
 }
 
 .mini-child:nth-child(2):hover{
@@ -595,7 +598,7 @@ sup{
   background-color: #0076DF;
   border-radius: 30px;
   font-size: 14px;
-  padding: 5px 15px 8px 15px;
+  padding: 6px 15px 8px 15px;
 }
 
 .ipad-child:nth-child(2){
@@ -605,10 +608,140 @@ sup{
   /* padding: 10px 20px; */
   border-radius: 30px;
   font-size: 14px;
-  padding: 8px 17px;
+  padding: 9px 17px;
 }
 
 .ipad-child:nth-child(2):hover{
   color: #f5f5f7;
   background-color: #0076DF;
+}
+
+.upgrade{
+  background-image: url(./images/upgrade.jpg);
+  background-position: center;
+  min-height: 600px;
+  display: block;
+  text-decoration: none;
+}
+
+.upgrade-text{
+  text-align: center;
+}
+
+.upgrade-para{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #1d1d1f;
+  font-weight: 500;
+}
+
+.upgrade-para img{
+  width: 28px;
+  padding-top: 10px;
+}
+
+.upgrade-p {
+  font-size: 22px;
+  color: #1d1d1f;
+  margin-top: -18px;
+  font-weight: 400;
+}
+
+.upgrade-anchor{
+  border: 2px solid #0076DF;
+  color: #f5f5f7;
+  background-color: #0076DF;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 5px 15px 8px 15px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.card{
+  background-image: url(./images/card.jpg);
+  min-height: 600px;
+  text-decoration: none;
+  display: block;
+  background-position: center;
+}
+
+.card-text{
+  text-align: center;
+}
+
+.card-para{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #1d1d1f;
+  font-weight: 500;
+  /* color: yellow; */
+}
+
+
+.card-para img{
+  width: 28px;
+  padding-top: 10px;
+}
+
+.card-p {
+  font-size: 22px;
+  color: #1d1d1f;
+  margin-top: -16px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.card-anchor{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.card-child:nth-child(1){
+  border: 2px solid #0076DF;
+  color: #f5f5f7;
+  background-color: #0076DF;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 6px 15px 8px 15px;
+}
+
+.card-child:nth-child(2){
+  border: 1px solid #0076DF;
+  /* background-color: #f5f5f7; */
+  color: #0076DF;
+  /* padding: 10px 20px; */
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 9px 17px;
+}
+
+.card-child:nth-child(2):hover{
+  color: #f5f5f7;
+  background-color: #0076DF;
+}
+
+.endless{
+  background-color: #f5f5f7;
+  min-height: 900px
+}
+
+.endless h2{
+  font-size: 56px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.grid-container2{
+  display: grid;
+  grid-auto-flow: column;
+  /* grid-auto-columns: 300px 600px 300px; */
 }
