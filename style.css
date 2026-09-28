@@ -843,7 +843,7 @@ sup{
   /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
-  gap: 82px;
+  gap: 74px;
 }
 
 .sabrina-innerchild:nth-child(1),
